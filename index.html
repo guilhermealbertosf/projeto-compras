@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Compras</h1>
+    </header>
+    <main>
+        <section id="entrada" class="entrada">
+            <p>
+                <label for="txtval">R$</label>
+                <input type="number" name="txtval" id="txtval" placeholder="Valor do produto">
+                <input id="botao" type="button" value="Somar" onclick="somar()">
+            </p>
+        </section>
+        <section id="saida" class="saida">
+            <p id="res">Resultado</p>
+        </section>
+    </main>
+    <footer>
+        &copy;guilhermealbertosf
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

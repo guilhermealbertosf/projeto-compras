@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+:root{
+    --cor1: rgb(224, 94, 2);
+    --cor2: rgb(4, 103, 4);
+    --cor3: rgb(210, 210, 210);
+    --gradiente: rgb(179, 92, 31) , rgb(255, 55, 0);
+    --sombra: #00000065;
+    --fonte_forte: bold;
+}
+
+body{
+    background-color: var(--cor1);
+    text-align: center;
+}
+div#imagem{
+    height: 30vh;
+    background: blue url("../midia/download.jpg") left center no-repeat fixed;
+    background-size: cover;
+    border: 2px solid black;
+}
+header{
+    color: var(--cor2);
+    background: white;
+    box-shadow: 5px 5px 10px var(--sombra);
+    padding: 20px;
+    font: 400 1.5em "Caprasimo", serif;  
+    margin-bottom: 10px;  
+}
+main{
+    background-color: var(--cor3);
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 5px 5px 10px var(--sombra);
+}
+section{
+    padding-top: 20px;
+}
+input{
+    padding: 2px;
+    font-size: 1.2em;
+}
+input#txtval{
+    background-color: rgb(255, 255, 255);
+    
+}
+input#botao{
+    color: white;
+    font-weight: bold ;
+    background-color: var(--cor1);
+    border-radius: 10px;
+}
+footer{
+    margin-top: 10px;
+    font-weight: var(--fonte_forte);
+    background-color: var(--cor2);
+    box-shadow: 5px 5px 10px var(--sombra);
+    padding: 10px;
+}

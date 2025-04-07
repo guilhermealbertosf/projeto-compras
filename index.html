@@ -16,16 +16,29 @@
     <main>
         <section id="entrada" class="entrada">
             <p>
-                <label for="txtval">R$</label>
+                <label for="itxtn"></label>
+                <input type="text" name="txtn" id="itxtn" placeholder="Nome do produto">
+            </p>
+            <p>
+                <label for="txtval"></label>
                 <input type="number" name="txtval" id="txtval" placeholder="Valor do produto">
+                
+            </p>
+            <p>
                 <input id="botao" type="button" value="Somar" onclick="somar()">
+                
             </p>
         </section>
         <section id="saida" class="saida">
-            <p id="res">Resultado</p>
             <select name="tab" id="tab" size="10">
                 <option value="0">Tabela com os produtos</option>
             </select>
+            <p id="res">Resultado</p>
+            <div>
+                <label for="idel"></label>
+                <input type="text" name="del" id="idel" placeholder="Código">
+                <input type="button" value="Deletar" onclick="del()">
+            </div>
         </section>
     </main>
     <footer>

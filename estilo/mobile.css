@@ -48,16 +48,30 @@ section{
 input{
     padding: 2px;
     font-size: 1.2em;
+    margin: 2px;
 }
-input#txtval{
-    background-color: rgb(255, 255, 255);
-    
+input#txtval , #itxtn , #idel{
+    background-color: rgb(255, 255, 255); 
 }
+
+input#idel{
+    margin-top: 10px;
+    width: 115px;
+}
+
 input#botao{
     color: white;
     font-weight: bold ;
     background-color: var(--cor1);
     border-radius: 10px;
+}
+select#tab{
+    width: 200px;
+}
+p#res{
+    margin: auto;
+    background-color: var(--cor1);
+    width: 200px;
 }
 footer{
     margin-top: 10px;

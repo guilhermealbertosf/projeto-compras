@@ -8,16 +8,22 @@ function somar(){
     let tab = document.getElementById("tab")
     let n = Number(val.value)
 
-    total += n
-    valores.push(n)
-    c += 1
+    if(produto.length == 0 || val.value.length == 0){
+        alert("Escreva o PRODUTO e o seu PREÇO!")
+    }
+    else{
+        total += n
+        valores.push(n)
+        c += 1
 
-    res.innerHTML = `O valor total da compra é R$ ${total.toFixed(2)}`
-    let elemento = document.createElement('option')
-    elemento.value = `${c}`
-    elemento.id = `opcao${c}`
-    elemento.text = `${c}º - ${produto} - R$ ${n.toFixed(2)}`
-    tab.appendChild(elemento)
+        res.innerHTML = `O valor total da compra é R$ ${total.toFixed(2)}`
+        let elemento = document.createElement('option')
+        elemento.value = `${c}`
+        elemento.id = `opcao${c}`
+        elemento.text = `${c}º - ${produto} - R$ ${n.toFixed(2)}`
+        tab.appendChild(elemento)
+    }
+    
 }
 
 

@@ -21,14 +21,12 @@ body{
     text-align: center;
 }
 div#imagem{
-    height: 30vh;
-    background: blue url("../midia/download.jpg") left center no-repeat fixed;
-    background-size: cover;
-    border: 2px solid black;
+    background-color: #ffffff;
+    padding: 10px;
 }
 header{
     color: var(--cor2);
-    background: white;
+    background: var(--cor3);
     box-shadow: 5px 5px 10px var(--sombra);
     padding: 20px;
     font: 400 1.5em "Caprasimo", serif;  

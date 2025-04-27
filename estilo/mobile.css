@@ -24,6 +24,10 @@ div#imagem{
     background-color: #ffffff;
     padding: 10px;
 }
+div#imagem img{
+    display: block;
+    width: 90%;
+}
 header{
     color: var(--cor2);
     background: var(--cor3);

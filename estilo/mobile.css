@@ -5,39 +5,63 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
     --cor1: #ff914d;
     --cor2: #0097b2;
-    --cor3: rgb(210, 210, 210);
-    --gradiente: rgb(179, 92, 31) , rgb(255, 55, 0);
+    --cor3: #862d5b;
     --sombra: #00000065;
     --fonte_forte: bold;
 }
 
 body{
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     text-align: center;
 }
-div#imagem{
-    background-color: #ffffff;
-    padding: 10px;
-}
-div#imagem img{
-    display: block;
-    
-}
-header{
+header{ 
     color: var(--cor2);
-    background: var(--cor3);
+    background: white;
     box-shadow: 5px 5px 10px var(--sombra);
     padding: 20px;
-    font: 400 1.5em "Caprasimo", serif;  
     margin-bottom: 10px;  
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+header section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+header section img{
+    display: block;
+}
+header section h1{
+    font: 400 3em "Caprasimo", serif;    
+}
+header nav{
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    font: bold 1em arial;
+    background-color: var(--cor1);
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    
+}
+    
 main{
-    background-color: var(--cor3);
+    background-color: white;
     width: 80%;
     max-width: 500px;
     margin: auto;
@@ -48,9 +72,10 @@ section{
     padding-top: 20px;
 }
 input{
-    padding: 2px;
+    border-radius: 4px;
+    padding: 5px;
     font-size: 1.2em;
-    margin: 2px;
+    margin-bottom: 20px;
 }
 input#txtval , #itxtn , #idel{
     background-color: rgb(255, 255, 255); 
@@ -78,7 +103,7 @@ p#res{
 footer{
     margin-top: 10px;
     font-weight: var(--fonte_forte);
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     box-shadow: 5px 5px 10px var(--sombra);
     padding: 10px;
 }

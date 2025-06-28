@@ -1,7 +1,7 @@
 let total = 0
 let c = 0
 let valores = [0]
-function somar(){
+function Adicionar(){
     let produto = document.getElementById("itxtn").value
     let val = document.getElementById("txtval")
     let res = document.getElementById("res")

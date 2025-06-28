@@ -8,8 +8,8 @@
     
 }
 :root{
-    --cor1: rgb(224, 94, 2);
-    --cor2: rgb(4, 103, 4);
+    --cor1: #ff914d;
+    --cor2: #0097b2;
     --cor3: rgb(210, 210, 210);
     --gradiente: rgb(179, 92, 31) , rgb(255, 55, 0);
     --sombra: #00000065;
@@ -26,7 +26,7 @@ div#imagem{
 }
 div#imagem img{
     display: block;
-    width: 90%;
+    
 }
 header{
     color: var(--cor2);

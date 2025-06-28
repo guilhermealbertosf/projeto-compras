@@ -51,7 +51,7 @@ header nav{
     justify-content: space-around;
     align-items: center;
 }
-header nav a{
+header a{
     text-decoration: none;
     color: white;
     font: bold 1em arial;
@@ -103,8 +103,10 @@ input#botao:active{
     font-size: large;
 }
 select#tab{
+    border: 1px solid black;
     padding: 0px;
     background-color: var(--cor2);
+    width: 95%;
 }
 select#tab option.txt_inicial{
     background-color: var(--cor1);
@@ -112,7 +114,7 @@ select#tab option.txt_inicial{
     font: bold 1.5em verdana;
 }
 select#tab option{
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.237);
     color: black;
     background-color: white;
     font-weight: bold;
@@ -120,10 +122,10 @@ select#tab option{
 }
 p#res{
     margin: auto;
-    padding: 5px;
+    padding: 5px 0px;
     background-color: var(--cor1);
-    width: 271px;
     border: 1px solid black;
+    width: 95%;
 }
 footer{
     font-weight: var(--fonte_forte);

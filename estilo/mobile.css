@@ -18,6 +18,8 @@
 body{
     background-color: var(--cor2);
     text-align: center;
+    position: relative;
+
 }
 header{ 
     color: var(--cor2);
@@ -51,7 +53,7 @@ header nav{
 }
 header nav a{
     text-decoration: none;
-    color: black;
+    color: white;
     font: bold 1em arial;
     background-color: var(--cor1);
     padding: 5px;
@@ -67,6 +69,7 @@ main{
     margin: auto;
     padding: 20px;
     box-shadow: 5px 5px 10px var(--sombra);
+    
 }
 section{
     padding-top: 20px;
@@ -89,21 +92,44 @@ input#idel{
 input#botao{
     color: white;
     font-weight: bold ;
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     border-radius: 10px;
+    border: none;
+}
+input#botao:hover{
+    background-color: var(--cor3);
+}
+input#botao:active{
+    font-size: large;
 }
 select#tab{
-    width: 200px;
+    padding: 0px;
+    background-color: var(--cor2);
+}
+select#tab option.txt_inicial{
+    background-color: var(--cor1);
+    color: black;
+    font: bold 1.5em verdana;
+}
+select#tab option{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    padding: 5px;
 }
 p#res{
     margin: auto;
+    padding: 5px;
     background-color: var(--cor1);
-    width: 200px;
+    width: 271px;
+    border: 1px solid black;
 }
 footer{
-    margin-top: 10px;
     font-weight: var(--fonte_forte);
     background-color: var(--cor1);
+    color: rgb(0, 0, 0);
     box-shadow: 5px 5px 10px var(--sombra);
     padding: 10px;
+    margin-top: 15px;
 }
